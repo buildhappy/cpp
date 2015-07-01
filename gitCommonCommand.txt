@@ -3,7 +3,7 @@ git add test.txt
 git add -A
 git commit -m "add file"
 git status
-ssh-keygen -t rsa -C "zhuyoujun0513@163.com" // cd ~/.ssh 
+ssh-keygen -t rsa -C "xxxx@163.com" // cd ~/.ssh 
 cat id_rsa.pub
 git remote add origin git@github.com:zhuyoujun/cpp.git
 git push -u origin master
