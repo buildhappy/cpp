@@ -12,11 +12,17 @@
 int main()
 {
         Sales_item item,sum;
-        
-        while(std::cin >> item)
+        if(std::cin >> sum) 
         {
-                sum += item;
+            while(std::cin >> item)
+            {
+                    sum += item;
+            }
+            std::cout << sum << std::endl; // print their sum.
         }
-        std::cout << sum << std::endl; // print their sum.
+        else
+        {
+                std::cout << "no input.";
+        }
         return 0;
 }
