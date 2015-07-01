@@ -1,9 +1,9 @@
-/*Date    :2015/06/28 
+/*Date    :2015/07/01
  *Author  :zhuyoujun
  *Email   :zhuyoujun0513@163.com
- *Function:intro to class: input and output.
+ *Function:intro to class: add Sales_item.
  *Link    :C++ Primer 5th(english version)
-              @page 20.
+              @page 21.
  */
 
 #include<iostream>
@@ -11,10 +11,9 @@
 
 int main()
 {
-        Sales_item book;
-        //read ISBN,number of copies sold,and sales price.
-        std::cin >> book;
-        //write ISBN, number of copies sold,total revenue,and average price
-        std::cout << book << std::endl;
+        Sales_item item1, item2;
+        
+        std::cin >> item1 >> item2; //read a pair of transactions.
+        std::cout << item1 + item2 << std::endl; // print their sum.
         return 0;
 }
