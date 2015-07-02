@@ -1,1 +1,3 @@
-Data must refer to the same ISBN.
+book1 8 200 25
+book2 7 110 15.7143
+book3 3 60 20
