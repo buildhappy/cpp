@@ -35,6 +35,17 @@ int main()
        // int *p1 = nullptr;//support g++4.6 or later:c++11
         int *p2 = 0;
         int *p3 = NULL;
+
+        //defining multiple variables
+        int number1, number2;
+        int *pn1, pn2;
+        int pn3, *pn4;
+        int *pn5, *pn6;
+
+        //pointer to pointer
+        int ival3 = 1024;
+        int *pi3 = &ival3;
+        int **pi33 = &pi3;
         return 0;
 
 }
