@@ -21,10 +21,10 @@ int main()
                 v.push_back(i);
         }
 
-        //output the sum of each pair of adjacent elements.
-        for (int i = 0; v.size() && i != v.size() -1; i++)
+        //output the sum of the first and last element,then the second and the last second elements, and so on.
+        for (int i = 0, j = v.size() - 1; i <= j; i++,j--)
         {
-            cout << "sum of v[" << i  << "]: " << v[i] << " and v[" << i+1 << "]: " <<v[i+1] << " = " << v[i] + v[i+1] << endl; 
+                cout << "sum of v[" << i  << "]: " << v[i] << " and v[" << j << "]: " <<v[j] << " is " << v[i] + v[j] << endl; 
         }
         return 0;
 }
