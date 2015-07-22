@@ -22,6 +22,19 @@ int main()
         int ia[] = {1,2,3,4,5,6,7,8,9};
         auto ia2(ia); // ia2 is int* that points the first element.
         ia2  = 42;// error.
+
+	auto ia22(&ia[0]);
+
+        int arr[] = {0,1,2,3,4,5,6,7,8,9};
+	int *p = arr;
+	++p;
+
+	int *e = &arr[10];
+	for (int *b = arr; b != e; ++e)
+	{
+		cout << *b <<endl;
+	}
+
         return 0;
 }
 
