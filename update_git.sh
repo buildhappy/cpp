@@ -3,7 +3,7 @@
 #Author:zhuyoujun
 #Date:2015/07/23
 #Email:zhuyoujun0513@163.com
-#Function: Automatic update files to git remote repository.
+#Function: automatic update files to git remote repository.
 
 #pull
 echo "------update files------"
