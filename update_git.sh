@@ -6,17 +6,17 @@
 #Function: Automatic update files to git remote repsitory.
 
 #pull
-echo "update files."
+echo "------update files------"
 git pull
 
 ###add files
-echo "add files"
+echo "------add files------"
 git add -A
 
 ###commit
-echo "commit ..."
+echo "------commit------"
 git commit -m " update"
 
 ###push
-echo "push to remote repsitoy"
+echo "------push to remote repsitoy------"
 git push origin master
