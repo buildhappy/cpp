@@ -5,7 +5,7 @@
 #Email:zhuyoujun0513@163.com
 #Function: automatic update files to git remote repository.
 
-#pull
+###pull
 echo "------update files------"
 git pull
 
