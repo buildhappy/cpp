@@ -1,0 +1,23 @@
+#get software.
+wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
+
+#unzip
+tar -xzvf ctags-5.8.tar.gz 
+cd ctags-5.8
+
+#configure
+./configure
+
+#make and make install
+make
+make install
+
+#confirm.
+ctags --version
+
+#show like this: "
+Exuberant Ctags 5.8, Copyright (C) 1996-2009 Darren Hiebert
+  Compiled: Jul 22 2015, 23:12:30
+  Addresses: <dhiebert@users.sourceforge.net>, http://ctags.sourceforge.net
+  Optional compiled features: +wildcards, +regex
+"
