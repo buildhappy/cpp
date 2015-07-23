@@ -1,3 +1,9 @@
+#Author:zhuyoujun
+#Date:2015/07/23
+#Email:zhuyoujun0513@163.com
+#Function:Ctags's installtion and usage.
+
+#--------------------install---------------------------------
 #get software.
 wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
 
@@ -21,3 +27,21 @@ Exuberant Ctags 5.8, Copyright (C) 1996-2009 Darren Hiebert
   Addresses: <dhiebert@users.sourceforge.net>, http://ctags.sourceforge.net
   Optional compiled features: +wildcards, +regex
 "
+
+
+#--------------------usage---------------------------------
+#reference 1: man ctags
+#reference 2: the part of vim in website: http://courses.cs.washington.edu/courses/cse451/10au/tutorials/tutorial_ctags.html
+
+#generate ctags file in your directory.
+cd your_directoy
+ctags -R *
+
+#open any Linux source file in Vim and use the following basic commands:
+Keyboard command  Action
+Ctrl-]            Jump to the tag underneath the cursor
+Ctrl-t            Jump back up in the tag stack
+:ts <tag> <RET>   Search for a particular tag
+:tn               Go to the next definition for the last tag
+:tp               Go to the previous definition for the last tag
+:ts               List all of the definitions of the last tag

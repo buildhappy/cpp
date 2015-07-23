@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#Author:zhuyoujun
+#Date:2015/07/23
+#Email:zhuyoujun0513@163.com
+#Function: Automatic update files to git remote repsitory.
+
+#pull
+echo "update files."
+git pull
+
+###add files
+echo "add files"
+git add -A
+
+###commit
+echo "commit ..."
+git commit -m " update"
+
+###push
+echo "push to remote repsitoy"
+git push origin master
