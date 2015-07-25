@@ -8,4 +8,20 @@ cat id_rsa.pub
 git remote add origin git@github.com:zhuyoujun/cpp.git
 git push -u origin master
 git push origin master
+git pull origin master
 
+
+#create a remote repository.
+1.mdkir dir_git
+2.cd dir_git
+3.git init
+##create a repo in website github.com named "dir_git"
+4.git remote add origin git@github.com:zhuyoujun/dir_git.git
+5.git pull origin master
+6.git push origin master
+
+##error: The requested URL returned error: 403 while accessing https://github.com/zhuyoujun/nand2tetris/info/refs
+
+fatal: HTTP request failed
+solve:vi .git/config,under [origin]
+change it from url=https://MichaelDrogalis@github.com/derekerdmann/lunch_call.git to url=ssh://git@github.com/derekerdmann/lunch_call.git. that is, change all the texts before @ symbol to ssh://git
