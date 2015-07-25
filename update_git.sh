@@ -7,7 +7,7 @@
 
 ###pull
 echo "------update files------"
-git pull
+git pull origin master
 
 ###add files
 echo "------add files------"
