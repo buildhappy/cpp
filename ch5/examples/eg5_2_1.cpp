@@ -9,34 +9,15 @@
 #include<iostream>
 int main()
 {
-        vector<string> scores = {"F","D","C","B","A","A++"};
-        string lettergrade;
-        int grade ;
-        cin >> grade;
-        if (grade < 60)
-                lettergrade = scores[0];
-        else
-                lettergrade = scores[(grade - 50) / 10];
+        while (int i = get_num()) 
+                cout << i << endl;
+        i = 0; //error.
 
-        // nested if 
-        if (grade % 10 > 7)
-                lettergrade += '+';
-        else if (grade % 10 <3)
-                lettergrade += '-';
-
-        if (grade < 60)
-        {
-                lettergrade = scores[0];
-        }
-        else
-        {
-                lettergrade = scores[(grade - 50) / 10];
-                if (grade % 10 > 7)
-                    lettergrade += '+';
-                else if (grade % 10 <3)
-                    lettergrade += '-';
-        }
+        auto beg = v.begin();
+        while (beg != v.end() && *beg > 0)
+                ++beg;
+        if (beg == v.end())
+                //we know that all elements in v are >= 0;
         return 0;
 }
-
 
